@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiFinance.MainPage">
+    <Grid RowDefinitions="Auto,Auto,Auto,*,Auto" ColumnDefinitions="*,*,*"
+          RowSpacing="15"
+          Padding="30,25">
+        <Border Grid.ColumnSpan="3"
+                StrokeThickness="0" StrokeShape="RoundRectangle 25">
+            <Border.Shadow>
+                <Shadow Radius="60" Opacity="0.2" />
+            </Border.Shadow>
+            <Grid RowDefinitions="55,Auto,Auto,Auto,Auto,50"
+                  VerticalOptions="Center">
+                <Image Source="sort" HeightRequest="24" HorizontalOptions="Start" Margin="15,0,0,0" />
+                <Image Source="more" HeightRequest="24" HorizontalOptions="End" Margin="0,0,15,0" />
+
+                <Border Grid.Row="1"
+                        StrokeThickness="0" StrokeShape="RoundRectangle 50"
+                        HorizontalOptions="Center">
+                    <Image Source="cemahseri" WidthRequest="100" HeightRequest="100" Aspect="AspectFill" />
+                </Border>
+                <Label Grid.Row="2" Text="cemahseri" FontAttributes="Bold" FontSize="22" LineBreakMode="NoWrap" TextColor="{StaticResource Primary}" HorizontalTextAlignment="Center" Padding="0,15,0,0" />
+                <Label Grid.Row="3" Text="Back-End Developer" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" Padding="0,5,0,0" />
+
+                <Grid Grid.Row="4"
+                      RowDefinitions="Auto,*" ColumnDefinitions="Auto,*,Auto,*,Auto"
+                      RowSpacing="10"
+                      Padding="50,45,50,0">
+                    <Label Grid.Row="0" Grid.Column="0" Text="$8900" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="{StaticResource Primary}" />
+                    <Label Grid.Row="1" Grid.Column="0" Text="Income" FontSize="13" HorizontalTextAlignment="Center" />
+
+                    <Rectangle Grid.RowSpan="2" Grid.Column="1"
+                        VerticalOptions="Fill"
+                        WidthRequest="1"
+                        StrokeThickness="0"
+                        Fill="Gray" />
+
+                    <Label Grid.Row="0" Grid.Column="2" Text="$5500" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="{StaticResource Primary}" />
+                    <Label Grid.Row="1" Grid.Column="2" Text="Expenses" FontSize="13" HorizontalTextAlignment="Center" />
+
+                    <Rectangle Grid.RowSpan="2" Grid.Column="3"
+                               VerticalOptions="Fill"
+                               WidthRequest="1"
+                               StrokeThickness="0"
+                               Fill="Gray" />
+
+                    <Label Grid.Row="0" Grid.Column="4" Text="$890" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="{StaticResource Primary}" />
+                    <Label Grid.Row="1" Grid.Column="4" Text="Loan" FontSize="13" HorizontalTextAlignment="Center" />
+                </Grid>
+            </Grid>
+        </Border>
+
+        <HorizontalStackLayout Grid.Row="1">
+            <Label Text="Overview" VerticalOptions="Center" FontAttributes="Bold" FontSize="22" TextColor="{StaticResource Primary}" />
+            <Border StrokeThickness="0" StrokeShape="RoundRectangle 20"
+                    HorizontalOptions="Center" Padding="10"
+                    BackgroundColor="Transparent">
+                <Image Source="notifications" HeightRequest="24" />
+            </Border>
+        </HorizontalStackLayout>
+
+        <Label Grid.Row="1" Grid.ColumnSpan="3" Text="Aug 9, 2022" VerticalOptions="Center" FontAttributes="Bold" FontSize="14" TextColor="{StaticResource Primary}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+
+        <Grid Grid.Row="2" Grid.ColumnSpan="3"
+              RowDefinitions="Auto,Auto,Auto" ColumnDefinitions="*"
+              RowSpacing="18"
+              VerticalOptions="Center">
+            <Border Grid.Row="0"
+                    StrokeThickness="0" StrokeShape="RoundRectangle 25"
+                    HeightRequest="80">
+                <Border.Shadow>
+                    <Shadow Radius="60" Opacity="0.2" />
+                </Border.Shadow>
+                <Grid RowDefinitions="60" ColumnDefinitions="60,Auto,*"
+                      ColumnSpacing="10" Padding="15,0,15,0" VerticalOptions="Center">
+                    <Border StrokeThickness="0" StrokeShape="RoundRectangle 20"
+                            BackgroundColor="{StaticResource SeconaryBackground}">
+                        <Image Source="arrow_upward" HeightRequest="36" />
+                    </Border>
+                    <VerticalStackLayout Grid.Column="1" VerticalOptions="Center">
+                        <Label Text="Sent" FontSize="16" FontAttributes="Bold" />
+                        <Label Text="Sending Payments to Clients" FontSize="12" />
+                    </VerticalStackLayout>
+
+                    <Label Grid.Column="2" Text="$150" FontAttributes="Bold" VerticalOptions="Center" HorizontalTextAlignment="End" />
+                </Grid>
+            </Border>
+            <Border Grid.Row="1"
+                    StrokeThickness="0" StrokeShape="RoundRectangle 25"
+                    HeightRequest="80">
+                <Border.Shadow>
+                    <Shadow Radius="60" Opacity="0.2" />
+                </Border.Shadow>
+                <Grid RowDefinitions="60" ColumnDefinitions="60,Auto,*"
+                      ColumnSpacing="10" Padding="15,0,15,0" VerticalOptions="Center">
+                    <Border StrokeThickness="0" StrokeShape="RoundRectangle 20"
+                            BackgroundColor="{StaticResource SeconaryBackground}">
+                        <Image Source="arrow_downward" HeightRequest="36" />
+                    </Border>
+                    <VerticalStackLayout Grid.Column="1" VerticalOptions="Center">
+                        <Label Text="Receive" FontSize="16" FontAttributes="Bold" />
+                        <Label Text="Receiving Salary from company" FontSize="12" />
+                    </VerticalStackLayout>
+
+                    <Label Grid.Column="2" Text="$306" FontAttributes="Bold" VerticalOptions="Center" HorizontalTextAlignment="End" />
+                </Grid>
+            </Border>
+            <Border Grid.Row="2"
+                    StrokeThickness="0" StrokeShape="RoundRectangle 25"
+                    HeightRequest="80">
+                <Border.Shadow>
+                    <Shadow Radius="60" Opacity="0.2" />
+                </Border.Shadow>
+                <Grid RowDefinitions="60" ColumnDefinitions="60,Auto,*"
+                      ColumnSpacing="10" Padding="15,0,15,0" VerticalOptions="Center">
+                    <Border StrokeThickness="0" StrokeShape="RoundRectangle 20"
+                            BackgroundColor="{StaticResource SeconaryBackground}">
+                        <Image Source="payments" HeightRequest="36" />
+                    </Border>
+                    <VerticalStackLayout Grid.Column="1" VerticalOptions="Center">
+                        <Label Text="Loan" FontSize="16" FontAttributes="Bold" />
+                        <Label Text="Loan for the Car" FontSize="12" />
+                    </VerticalStackLayout>
+
+                    <Label Grid.Column="2" Text="$400" FontAttributes="Bold" VerticalOptions="Center" HorizontalTextAlignment="End" />
+                </Grid>
+            </Border>
+        </Grid>
+
+        <Grid Grid.Row="4" Grid.ColumnSpan="3"
+              RowDefinitions="*" ColumnDefinitions="*,*,*,*,*"
+              ColumnSpacing="50"
+              Padding="0,0,0,10">
+            <Image Grid.Column="0" Source="home" HeightRequest="30" HorizontalOptions="Center" VerticalOptions="Start" />
+            <Image Grid.Column="1" Source="credit_card" HeightRequest="30" HorizontalOptions="Center" VerticalOptions="Start" />
+            <Border Grid.Column="2"
+                    StrokeThickness="0" StrokeShape="RoundRectangle 10"
+                    BackgroundColor="{StaticResource Primary}"
+                    HeightRequest="38" WidthRequest="42">
+                <Image Source="add" HeightRequest="22" WidthRequest="22" HorizontalOptions="Center" VerticalOptions="Center" />
+            </Border>
+            <Image Grid.Column="3" Source="attach_money" HeightRequest="30" HorizontalOptions="Center" VerticalOptions="Start" />
+            <Image Grid.Column="4" Source="account" HeightRequest="30" HorizontalOptions="Center" VerticalOptions="Start" />
+        </Grid>
+    </Grid>
+</ContentPage>
