@@ -1,7 +1,7 @@
 ﻿#if ANDROID
 using Android.Views;
-#endif
 using Microsoft.Maui.LifecycleEvents;
+#endif
 
 namespace MauiFinance;
 
@@ -23,11 +23,11 @@ public static class MauiProgram
         {
             lifecycleBuilder.AddAndroid(android => android.OnCreate((activity, _) =>
             {
+                // To extend outside of the screen. This will also allow us to use fullscreen indicator's (that white/black horizontal line at the bottom of the screen) space aswell
+                // Otherwise, that indicator will have black background
                 activity.Window!.SetFlags(WindowManagerFlags.LayoutNoLimits, WindowManagerFlags.LayoutNoLimits);
-                activity.Window.ClearFlags(WindowManagerFlags.TranslucentStatus);
-                activity.Window.SetStatusBarColor(Android.Graphics.Color.Transparent);
 
-                // To make it fullscreen
+                // To enter in fullscreen mode.
                 activity.Window.AddFlags(WindowManagerFlags.Fullscreen);
                 activity.Window.ClearFlags(WindowManagerFlags.ForceNotFullscreen);
             }));
