@@ -103,24 +103,22 @@
 
         <!-- Bottom navigation bar. -->
         <Border Grid.Row="1"
-                StrokeThickness="0"
-                Padding="15,0">
+                StrokeThickness="0">
             <Border.Shadow>
                 <Shadow Radius="40" Opacity="0.1" />
             </Border.Shadow>
             <Grid RowDefinitions="*" ColumnDefinitions="*,*,*,*,*"
-                  ColumnSpacing="50"
                   VerticalOptions="Center">
-                <Image Grid.Column="0" Source="home" HeightRequest="30" HorizontalOptions="Center" VerticalOptions="Start" />
-                <Image Grid.Column="1" Source="credit_card" HeightRequest="30" HorizontalOptions="Center" VerticalOptions="Start" />
+                <Image Grid.Column="0" Source="home" HeightRequest="30" />
+                <Image Grid.Column="1" Source="credit_card" HeightRequest="30" />
                 <Border Grid.Column="2"
                         StrokeThickness="0" StrokeShape="RoundRectangle 10"
                         BackgroundColor="{StaticResource Primary}"
                         HeightRequest="38" WidthRequest="42">
-                    <Image Source="add" HeightRequest="22" WidthRequest="22" HorizontalOptions="Center" VerticalOptions="Center" />
+                    <Image Source="add" HeightRequest="22" WidthRequest="22" />
                 </Border>
-                <Image Grid.Column="3" Source="attach_money" HeightRequest="30" HorizontalOptions="Center" VerticalOptions="Start" />
-                <Image Grid.Column="4" Source="account" HeightRequest="30" HorizontalOptions="Center" VerticalOptions="Start" />
+                <Image Grid.Column="3" Source="attach_money" HeightRequest="30" />
+                <Image Grid.Column="4" Source="account" HeightRequest="30" />
             </Grid>
         </Border>
     </Grid>
